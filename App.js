@@ -1,29 +1,29 @@
-import  React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Container, Footer, FooterTab, Button, Header, Root, Icon } from 'native-base';
-import MapClass from './src/pages/Maps';
-import SearchBar from './src/components/SearchBar';
 import FinFood from './src/pages/FinFood';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import ScreenDoMapa from './src/pages/ScreenDoMapa';
-import Email from './src/pages/login/email';
+import FinFood2 from './src/pages/FinFood2'
 
 
 
 const AppNavigator = createStackNavigator({
-
-  'Login' :{
+  'FinFood' :{
+    screen: FinFood,
+    navigationOptions:{
+      headerTransparent: 'false'
+    }
+  }, 
+  // 'Home': {
+  //   screen: FinFood2,
+  //   navigationOptions:{
+  //     headerTransparent: 'false'
+  //   }
+    // },
+  'Map' :{
     screen: ScreenDoMapa,
     navigationOptions:{
       headerTransparent: 'false'
     }
-  },
-  'Home': {
-    screen: FinFood,
-    navigationOptions:{
-      headerTransparent: 'false'
-    },
   },
   'Email' : {
     screen: FinFood,
