@@ -1,12 +1,15 @@
 import  React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Container, Footer, FooterTab, Button, Header, Root, Icon } from 'native-base';
-import MapClass from './Maps';
+import MapClass from './MapClass';
 import SearchBar from '../components/SearchBar';
 
 
 export default class ScreenDoMapa extends Component{
 
+  Proximo(){
+    this
+  }
     render(){
                 return(
                   <Container>    
@@ -20,6 +23,8 @@ export default class ScreenDoMapa extends Component{
                             <Text>Home</Text>
                           </Button>
                           <Button vertical>
+                            {/* onPress={() => this.props.navigation.replace('ProxLocal')}> */}
+
                             <Icon name='beer'/>
                             <Text>Meus Locais</Text>
                           </Button>
