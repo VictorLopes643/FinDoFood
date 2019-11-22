@@ -20,7 +20,7 @@ export default class FinFood extends Component {
         };
       }
       componentDidMount(){
-        const firebaseConfig = {
+        firebaseConfig = {
             apiKey: "AIzaSyAwjI5Du4Jrbf8zXVKFjyH8w5L4oRJkp2o",
             authDomain: "finfood-4fef1.firebaseapp.com",
             databaseURL: "https://finfood-4fef1.firebaseio.com",
@@ -31,7 +31,8 @@ export default class FinFood extends Component {
             measurementId: "G-FXSLK475Z4"
           };
          firebase.initializeApp(firebaseConfig);
-      }
+        }
+      
    
       onChangeHandler(key, value){
        this.setState({[key]: value})
@@ -99,7 +100,6 @@ export default class FinFood extends Component {
         
               
          }
-     
      
      
      /*criando botao de login*/

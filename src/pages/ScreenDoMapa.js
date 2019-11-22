@@ -6,10 +6,6 @@ import SearchBar from '../components/SearchBar';
 
 
 export default class ScreenDoMapa extends Component{
-
-  Proximo(){
-    this
-  }
     render(){
                 return(
                   <Container>    
@@ -22,9 +18,9 @@ export default class ScreenDoMapa extends Component{
                             <Icon name='home'/>
                             <Text>Home</Text>
                           </Button>
-                          <Button vertical>
-                            {/* onPress={() => this.props.navigation.replace('ProxLocal')}> */}
-
+                          <Button vertical
+                            onPress={() => this.props.navigation.replace('ProxLocal')}
+                            >
                             <Icon name='beer'/>
                             <Text>Meus Locais</Text>
                           </Button>
@@ -39,7 +35,6 @@ export default class ScreenDoMapa extends Component{
                         </FooterTab>
                       </Footer>
                     </View>
-            
                   </Container>
                 )
               }

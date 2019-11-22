@@ -3,26 +3,16 @@ import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 import firebase from 'firebase';
 
 
-var uids = firebase.auth().currentUser.uid;
 const LocaisCard = ({pro}) =>(
     
     console.log(pro),
     <View style={styles.container}>
         <View style={styles.card}>
-            {/* <View style={styles.foto}>
-                <Image 
-                    source={{
-                        uri: Recebe.img,
-                    }}
-                    style={{borderRadius:200}}
-                    aspectRatio={1}
-                    resizeMode='cover'
-                /> */}
             </View>
             <View style={styles.nameLocais}>
-                    <Text style={styles.TitleCard}>{`${pro.uids.name}`}</Text>
+                    <Text style={styles.TitleCard}>{`${pro.aaabbb.name}`}</Text>
          
-                    <Text style={styles.SubTitleCard}>{`${pro.uids.name}`}</Text>
+                    <Text style={styles.SubTitleCard}>{`${pro.aaabbb.name}`}</Text>
             </View>
         </View> 
 )
